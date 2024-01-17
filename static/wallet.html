@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  
+  {{ $title := .Meta.Title}}
+  <!-- Title -->
+  <title>
+  {{$title}}
+  </title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content"" />
+  {{template "links"}}
+</head>
+
+<body>
+  {{template "header"}}
+  
+  <main id="content" role="main">
+    
+   <!-- Hero Section -->
+    <div class="position-relative">
+      <!-- Main Slider -->
+      <div id="heroSlider" class="js-slick-carousel slick"
+           data-hs-slick-carousel-options='{
+           "vertical": true,
+           "verticalSwiping": true,
+           "autoplay": true,
+           "autoplaySpeed": 3000,
+           "dots": true,
+           "dotsClass": "slick-pagination slick-pagination-white d-lg-none position-absolute bottom-0 right-0 left-0 mb-3",
+           "asNavFor": "#heroSliderNav",
+           "responsive": [
+             {
+               "breakpoint": 576,
+               "settings": {
+                 "vertical": false,
+                 "verticalSwiping": false
+               }
+             }
+           ]
+         }'>
+
+        <div class="js-slide d-flex gradient-x-overlay-sm-dark bg-img-hero min-h-620rem" style="background-image: url(./assets/img/1920x1080/img3.jpg);">
+          <!-- News Block -->
+          <div class="container d-flex align-items-center min-h-620rem">
+            <div class="w-lg-40 mr-5">
+              <!-- Author -->
+              <div class="media align-items-center mb-3"
+                   data-hs-slick-carousel-animation="fadeInUp">
+                <div class="avatar avatar-sm avatar-circle mr-3">
+                  <img class="avatar-img" src="./assets/img/100x100/img10.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <a class="text-white" href="blog-single-article.html">Christina Kray</a>
+                </div>
+              </div>
+              <!-- End Author -->
+
+              <div class="mb-5">
+                <h3 class="h1 font-weight-bold text-white"
+                    data-hs-slick-carousel-animation="fadeInUp"
+                    data-hs-slick-carousel-animation-delay="150">Front Interview with a Lead Designer of the Hubble</h3>
+              </div>
+              <a class="btn btn-primary btn-wide transition-3d-hover" href="blog-single-article.html"
+                 data-hs-slick-carousel-animation="fadeInUp"
+                 data-hs-slick-carousel-animation-delay="300">Read Article <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            </div>
+          </div>
+          <!-- End News Block -->
+        </div>
+
+        <div class="js-slide d-flex gradient-x-overlay-sm-dark bg-img-hero min-h-620rem" style="background-image: url(./assets/img/1920x1080/img5.jpg);">
+          <!-- News Block -->
+          <div class="container d-flex align-items-center min-h-620rem">
+            <div class="w-lg-40 mr-5">
+              <!-- Author -->
+              <div class="media align-items-center mb-3"
+                   data-hs-slick-carousel-animation="fadeInUp">
+                <div class="avatar avatar-sm avatar-circle mr-3">
+                  <img class="avatar-img" src="./assets/img/100x100/img10.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <a class="text-white" href="blog-single-article.html">Christina Kray</a>
+                </div>
+              </div>
+              <!-- End Author -->
+
+              <div class="mb-5">
+                <h2 class="h1 font-weight-bold text-white"
+                    data-hs-slick-carousel-animation="fadeInUp"
+                    data-hs-slick-carousel-animation-delay="150">Front Corporate - let's work together</h2>
+              </div>
+              <a class="btn btn-primary btn-wide transition-3d-hover" href="blog-single-article.html"
+                 data-hs-slick-carousel-animation="fadeInUp"
+                 data-hs-slick-carousel-animation-delay="300">Read Article <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            </div>
+          </div>
+          <!-- End News Block -->
+        </div>
+
+        <div class="js-slide d-flex gradient-x-overlay-sm-dark bg-img-hero min-h-620rem" style="background-image: url(./assets/img/1920x1080/img4.jpg);">
+          <!-- News Block -->
+          <div class="container d-flex align-items-center min-h-620rem">
+            <div class="w-lg-40 mr-5">
+              <div class="mb-7">
+                <!-- Author -->
+                <div class="media align-items-center mb-3"
+                     data-hs-slick-carousel-animation="fadeInUp">
+                  <div class="avatar avatar-sm avatar-circle mr-3">
+                    <img class="avatar-img" src="./assets/img/100x100/img4.jpg" alt="Image Description">
+                  </div>
+                  <div class="media-body">
+                    <a class="text-white" href="blog-single-article.html">Jeff Fisher</a>
+                  </div>
+                </div>
+                <!-- End Author -->
+
+                <h1 class="font-weight-bold text-white"
+                    data-hs-slick-carousel-animation="fadeInUp"
+                    data-hs-slick-carousel-animation-delay="150">How Google Assistant now helps you record stories</h1>
+              </div>
+              <a class="btn btn-primary btn-wide transition-3d-hover" href="blog-single-article.html"
+                 data-hs-slick-carousel-animation="fadeInUp"
+                 data-hs-slick-carousel-animation-delay="300">Read Article <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+            </div>
+          </div>
+          <!-- End News Block -->
+        </div>
+      </div>
+      <!-- End Main Slider -->
+
+      <!-- Slider Nav -->
+      <div class="container slick-pagination-line-wrapper content-centered-y right-0 left-0">
+        <div class="content-centered-y right-0 mr-3">
+          <div id="heroSliderNav" class="js-slick-carousel slick slick-pagination-line max-w-27rem ml-auto"
+               data-hs-slick-carousel-options='{
+               "vertical": true,
+               "verticalSwiping": true,
+               "autoplay": true,
+               "autoplaySpeed": 3000,
+               "slidesToShow": 3,
+               "isThumbs": true,
+               "asNavFor": "#heroSlider"
+             }'>
+            <div class="js-slide my-3">
+              <span class="text-white">Front Interview with a Lead Designer of the Hubble</span>
+
+              <span class="slick-pagination-line-progress">
+              <span class="slick-pagination-line-progress-helper"></span>
+            </span>
+            </div>
+            <div class="js-slide my-3">
+              <span class="text-white">Front Corporate - let's work together</span>
+
+              <span class="slick-pagination-line-progress">
+              <span class="slick-pagination-line-progress-helper"></span>
+            </span>
+            </div>
+            <div class="js-slide my-3">
+              <span class="text-white">How Google Assistant now helps you record stories</span>
+
+              <span class="slick-pagination-line-progress">
+              <span class="slick-pagination-line-progress-helper"></span>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Slider Nav -->
+    </div>
+    <!-- End Hero Section -->
+
+<!--  Section 2-->
+<div class="overflow-hidden">
+  <div class="container space-2">
+    <div class="row justify-content-lg-between align-items-lg-center">
+      <div class="col-lg-6 mb-9 mb-lg-0">
+        <!-- Mockups -->
+        <div class="position-relative max-w-40rem mx-auto">
+          <div class="device device-iphone-x w-85 mx-auto">
+            <img class="device-iphone-x-frame" src="../assets/svg/components/iphone-x.svg" alt="Image Description">
+            <img class="device-iphone-x-screen" src="../assets/img/407x867/img1.jpg" alt="Image Description">
+          </div>
+
+          <div class="position-absolute top-0 right-0 z-index-2 max-w-33rem mr-n11 mt-9">
+            <img class="img-fluid shadow-lg rounded" src="../assets/img/407x115/img1.jpg" alt="Image Description">
+          </div>
+          <div class="position-absolute bottom-0 left-0 z-index-2 max-w-33rem ml-n10 mb-10">
+            <img class="img-fluid shadow-lg rounded" src="../assets/img/480x320/img26.jpg" alt="Image Description">
+          </div>
+
+          <div class="position-absolute bottom-0 right-0 max-w-50rem w-100 z-index-n1 mx-auto">
+            <img class="img-fluid" src="../assets/svg/components/dots-6.svg" alt="Image Description">
+          </div>
+        </div>
+        <!-- End Mockups -->
+      </div>
+
+      <div class="col-lg-5">
+        <div class="mb-5">
+          <h2>Three basic steps for safe communication</h2>
+        </div>
+
+        <!-- Icon Block -->
+        <ul class="step step-dashed mb-7">
+          <li class="step-item">
+            <div class="step-content-wrapper">
+              <span class="step-icon step-icon-xs step-icon-soft-indigo">1</span>
+              <div class="step-content">
+                <h3 class="h4">Download the app</h3>
+                <p>and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.</p>
+              </div>
+             </div>
+          </li>
+          <li class="step-item">
+            <div class="step-content-wrapper">
+              <span class="step-icon step-icon-xs step-icon-soft-indigo">2</span>
+              <div class="step-content">
+                <h4>Enter you phone number</h4>
+                <p class="mb-0">We actively contribute to open-source projects—giving back to the community through development, patches, and sponsorships.</p>
+              </div>
+            </div>
+          </li>
+           <li class="step-item">
+            <div class="step-content-wrapper">
+              <span class="step-icon step-icon-xs step-icon-soft-indigo">3</span>
+              <div class="step-content">
+                <h4>Generate User_id</h4>
+                <p class="mb-0">We actively contribute to open-source projects—giving back to the community through development, patches, and sponsorships.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- End Icon Block -->
+
+        <div class="mt-2 text-center ">
+          <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mx-1 mb-2" href="#">Start now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Section 2-->
+
+<!--  Section 3-->
+    <div class="container space-2 space-top-lg-3">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 mb-9 mb-lg-0">
+          <div class="mb-5">
+            <h2>Payment made easy in stores with speed and security using.</h2>
+            <p>When paying in stores, Front Pay doesn't share your actual card number, so your information stays secure. Plus, you can check out faster and easier.</p>
+          </div>
+
+          <div class="w-md-50 w-lg-80 mb-2">
+            <!-- Fancybox -->
+            <div class="text-center rounded-lg py-11 px-5">
+                <h4 class="mb-3">Get our mobile app</h4>
+                <a class="btn btn-icon btn-indigo rounded-circle mr-2" href="#">
+                   <i class="fab fa-apple"></i>
+                </a>
+
+                <a class="btn btn-icon btn-indigo rounded-circle" href="#">
+                   <i class="fab fa-google-play"></i>
+                </a>
+
+            </div>
+            <!-- End Fancybox -->
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative max-w-50rem mx-auto aos-init aos-animate" data-aos="fade-up">
+            <!-- Device Mockup -->
+            <div class="device device-iphone-x w-75 mx-auto">
+              <img class="device-iphone-x-frame" src="./assets/svg/components/iphone-x.svg" alt="Image Description">
+              <img class="device-iphone-x-screen" src="./assets/img/407x867/img8.jpg" alt="Image Description">
+            </div>
+            <!-- End Device Mockup -->
+
+            <!-- SVG Component -->
+            <div class="position-absolute bottom-0 right-0 max-w-50rem w-100 z-index-n1 mx-auto">
+              <img class="img-fluid" src="./assets/svg/components/dots-green.svg" alt="Image Description">
+            </div>
+            <!-- End SVG Component -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Features Section -->
+    <div class="container space-top-lg-3 space-bottom-lg-2">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
+          <div class="mb-5">
+            <h2>The easiest way to pay within apps.</h2>
+            <p>Use Front Pay to make purchases in all kinds of apps. Pay for a ride, a pizza delivery, or a new pair of sneakers — with just a touch. Checking out is fast, simple, and secure.</p>
+          </div>
+
+          <h4 class="mb-3">Get our mobile app</h4>
+          <a class="btn btn-icon btn-indigo rounded-circle mr-2" href="#">
+            <i class="fab fa-apple"></i>
+          </a>
+          <a class="btn btn-icon btn-indigo rounded-circle" href="#">
+            <i class="fab fa-google-play"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-6 order-lg-1">
+          <div class="position-relative max-w-50rem mx-auto aos-init aos-animate" data-aos="fade-up">
+            <!-- Device Mockup -->
+            <div class="device device-iphone-x w-75 mx-auto">
+              <img class="device-iphone-x-frame" src="./assets/svg/components/iphone-x.svg" alt="Image Description">
+              <img class="device-iphone-x-screen" src="./assets/img/407x867/img9.jpg" alt="Image Description">
+            </div>
+            <!-- End Device Mockup -->
+
+            <!-- SVG Component -->
+            <div class="position-absolute bottom-0 right-0 max-w-50rem w-100 z-index-n1 mx-auto">
+              <img class="img-fluid" src="./assets/svg/components/abstract-shapes-3.svg" alt="Image Description">
+            </div>
+            <!-- End SVG Component -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Features Section -->
+    <div class="container space-top-2 space-top-lg-3 space-bottom-lg-2">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 mb-9 mb-lg-0">
+          <div class="mb-4">
+            <h2>Get paid and use the cash. All with Front Pay.</h2>
+            <p>When you receive money it's added to your Front Pay Cash card that lives in the Wallet app.</p>
+          </div>
+
+          <div class="media">
+            <span class="icon icon-xs icon-indigo icon-circle mt-1 mr-3">
+              <i class="fas fa-check fa-xs"></i>
+            </span>
+            <div class="media-body">
+              <p>When you pay with a debit or credit card, Front Pay doesn't keep transaction information that can be tied back to you.</p>
+            </div>
+          </div>
+          <div class="media">
+            <span class="icon icon-xs icon-indigo icon-circle mt-1 mr-3">
+              <i class="fas fa-check fa-xs"></i>
+            </span>
+            <div class="media-body">
+              <p>When you use Front Pay Cash, information is stored only for troubleshooting.</p>
+            </div>
+          </div>
+          <div class="media">
+            <span class="icon icon-xs icon-indigo icon-circle mt-1 mr-3">
+              <i class="fas fa-check fa-xs"></i>
+            </span>
+            <div class="media-body">
+              <p>You can also add your student ID card to Front Wallet to access places like your dorm and the library.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative max-w-50rem mx-auto aos-init aos-animate" data-aos="fade-up">
+            <!-- Device Mockup -->
+            <div class="device device-iphone-x w-75 mx-auto">
+              <img class="device-iphone-x-frame" src="./assets/svg/components/iphone-x.svg" alt="Image Description">
+              <img class="device-iphone-x-screen" src="./assets/img/407x867/img1.jpg" alt="Image Description">
+            </div>
+            <!-- End Device Mockup -->
+
+            <!-- SVG Component -->
+            <div class="position-absolute bottom-0 right-0 max-w-50rem w-100 z-index-n1 mx-auto">
+              <img class="img-fluid" src="./assets/svg/components/abstract-shapes-4.svg" alt="Image Description">
+            </div>
+            <!-- End SVG Component -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+
+
+<!-- Section 9 -->
+<div class="overflow-hidden">
+  <div class="container space-2 space-top-lg-3 position-relative">
+    <!-- Title -->
+    <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+      <span class="d-block small font-weight-bold text-cap mb-2">What we do?</span>
+      <h2>Front makes designing easy and performance fast</h2>
+    </div>
+    <!-- End Title -->
+
+    <div class="row">
+      <div class="col-sm-4 mb-3 mb-sm-5">
+        <!-- Icon Blocks -->
+        <div class="pr-lg-6">
+          <figure class="max-w-6rem w-100 mb-3">
+            <img class="img-fluid" src="../assets/svg/icons/icon-45.svg" alt="SVG">
+          </figure>
+          <h4>More creativity</h4>
+          <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+
+      <div class="col-sm-4 mb-3 mb-sm-5">
+        <!-- Icon Blocks -->
+        <div class="pr-lg-6">
+          <figure class="max-w-6rem w-100 mb-3">
+            <img class="img-fluid" src="../assets/svg/icons/icon-5.svg" alt="SVG">
+          </figure>
+          <h4>Scale budgets efficiently</h4>
+          <p>Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+
+      <div class="col-sm-4 mb-3 mb-sm-5">
+        <!-- Icon Blocks -->
+        <div class="pr-lg-6">
+          <figure class="max-w-6rem w-100 mb-3">
+            <img class="img-fluid" src="../assets/svg/icons/icon-2.svg" alt="SVG">
+          </figure>
+          <h4>Smart Dashboards</h4>
+          <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+
+      <div class="col-sm-4 mb-3 mb-sm-5 mb-sm-0">
+        <!-- Icon Blocks -->
+        <div class="pr-lg-6">
+          <figure class="max-w-6rem w-100 mb-3">
+            <img class="img-fluid" src="../assets/svg/icons/icon-1.svg" alt="SVG">
+          </figure>
+          <h4>Control Center</h4>
+          <p>Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <!-- Icon Blocks -->
+        <div class="pr-lg-6">
+          <figure class="max-w-6rem w-100 mb-3">
+            <img class="img-fluid" src="../assets/svg/icons/icon-15.svg" alt="SVG">
+          </figure>
+          <h4>Email Reports</h4>
+          <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+
+      <div class="col-sm-4">
+        <!-- Icon Blocks -->
+        <div class="pr-lg-6">
+          <figure class="max-w-6rem w-100 mb-3">
+            <img class="img-fluid" src="../assets/svg/icons/icon-26.svg" alt="SVG">
+          </figure>
+          <h4>Forecasting</h4>
+          <p>Staying focused allows us to turn every project we complete into something we love.</p>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Section 9-->
+    
+    <!-- last Section -->
+    <div class="bg-primary">
+      <div class="container space-2">
+        <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h2 class="text-white mb-0">Create better experiences with Front Pay</h2>
+          </div>
+
+          <div class="col-lg-5 text-lg-right">
+            <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mx-1 mb-2" href="#">Get Started</a>
+            <a class="btn btn-light btn-wide btn-pill transition-3d-hover mx-1 mb-2" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End last Section -->
+  </main>
+
+  {{template "footer"}}
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="./assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/vendor/aos/dist/aos.js"></script>
+  <!-- JS Implementing Plugins -->
+<script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+     // INITIALIZATION OF SLICK CAROUSEL
+      // =======================================================
+      $('#heroSliderNav').on('init', function (event, slick) {
+        $(slick.$slider).find('.slick-pagination-line-progress .slick-pagination-line-progress-helper').each(function() {
+          $(this).css({
+            transitionDuration: (slick.options.autoplaySpeed - slick.options.speed) + 'ms'
+          });
+        });
+
+        setTimeout(function() {
+          $(slick.$slider).addClass('slick-dots-ready');
+        });
+      });
+
+      $('#heroSliderNav').one('beforeChange', function (event, slick) {
+        $(slick.$slider).find('.slick-pagination-line-progress .slick-pagination-line-progress-helper').each(function() {
+          $(this).css({
+            transitionDuration: (slick.options.autoplaySpeed + slick.options.speed) + 'ms'
+          });
+        });
+      });
+
+
+      // INITIALIZATION OF SLICK CAROUSEL
+      // =======================================================
+      $('.js-slick-carousel').each(function() {
+        var slickCarousel = $.HSCore.components.HSSlickCarousel.init($(this));
+      });
+
+      $(window).on('resize', function() {
+        $('#heroSliderNav').slick('setPosition');
+      });
+
+
+      // INITIALIZATION OF STICKY BLOCKS
+      // =======================================================
+      $('.js-sticky-block').each(function () {
+        var stickyBlock = new HSStickyBlock($(this)).init();
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+<!-- JS Implementing Plugins -->
+<script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
+
+<!-- JS Front -->
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>
+
+  
