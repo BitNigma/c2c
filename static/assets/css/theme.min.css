@@ -11481,7 +11481,7 @@ button:focus {
 }
 .navbar-nav-item:focus .nav-link,
 .navbar-nav-item:hover .nav-link {
-    color: #30bb97;
+    color: #906eff;
 }
 .header .nav-link.active,
 .header .navbar-nav-item.active .nav-link {
@@ -11489,14 +11489,15 @@ button:focus {
 }
 .header .nav-link {
     color: #677788;
+    font-size: 18px;
 }
 
 .header .nav-link.active,
 .header .navbar-nav-item.active .nav-link {
-    color: #377dff;
+    color: #000;
 }
 .header .nav-link {
-    color: #fff;
+    color: #000;
 }
 
 .header .nav-link-toggle {
@@ -17204,7 +17205,7 @@ label.btn {
     background-color: #fff;
 }
 .nav-white .nav-link:not(.active):hover {
-    color: #30bb97;
+    color: #7b61ff;
 }
 .nav.nav-border-white .nav-link {
     color: rgba(255, 255, 255, 0.7);

@@ -89,8 +89,8 @@ func (s *APIserver) handlehello() http.HandlerFunc {
 
 func (s *APIserver) mainhandle() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		basetpls := []string{"static/header.html", "static/footer.html", "static/head.html"}
-		mass := []string{"static/index.html", basetpls[0], basetpls[1], basetpls[2]}
+		basetpls := []string{"static/header.html", "static/footer.html", "static/head.html", "static/meta.html"}
+		mass := []string{"static/index.html", basetpls[0], basetpls[1], basetpls[2], basetpls[3]}
 
 		//create html template
 		tmpl, err := template.ParseFiles(mass...)
