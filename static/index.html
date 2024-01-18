@@ -39,24 +39,24 @@
 					<div class="t-width t-width_100 ">
 						<script>
 						$(document).ready(function() {
-						    /* Нужно заменить на ID блока выполняющего роль меню */
+						    
 						    var id = "#rec431616596";
 						    if ($(id).length > 0) {
 						        var newMenu = $(id).clone(true).addClass("fixed unpinned").appendTo("#allrecords");
 						
-						        /* Если нужно скрыть меню со страницы (только появляться при скролле) укажите true */
-						        var hideMenu = false; /* Если нужно оставить меню на своём месте — false */
+						       
+						        var hideMenu = false; 
 						        if (hideMenu) {
 						            $(id)[0].remove();
 						        }
 						
-						        /* Если нужно, чтобы меню прикреплялось и в мобильной версии, то укажите true */
+						       
 						        var needMobile = true;
 						
 						        if (!isMobile || (isMobile && needMobile)) {
 						            $(window).scroll(function() {
 						                var top = $(document).scrollTop();
-						                /* появление меню при прокрутке через 333 пикселей от начала страницы */
+						                
 						                if (top >= 500) {
 						                    newMenu.removeClass("unpinned");
 						                    newMenu.addClass("pinned");
@@ -77,7 +77,7 @@
 						    top: 0;
 						    width: 100%;
 						    transition: transform 250ms linear;
-						    /* время появления/исчезновения меню — 250 мс */
+						   
 						    z-index: 998;
 						}
 						
@@ -103,7 +103,7 @@
 					<div class="t396__carrier" data-artboard-recid="434272233"></div>
 					<div class="t396__filter" data-artboard-recid="434272233"></div>
 					<div class='t396__elem tn-elem tn-elem__4342722331648736210795' data-elem-id='1648736210795' data-elem-type='image' data-field-top-value="103" data-field-left-value="83" data-field-width-value="703" data-field-axisy-value="top" data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1302" data-field-fileheight-value="1426" data-field-top-res-320-value="68" data-field-left-res-320-value="0" data-field-width-res-320-value="320" data-field-top-res-480-value="31" data-field-left-res-480-value="-61" data-field-width-res-480-value="409" data-field-top-res-640-value="34" data-field-left-res-640-value="-125" data-field-width-res-640-value="495" data-field-top-res-960-value="108" data-field-left-res-960-value="30" data-field-width-res-960-value="500">
-						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='https://static.tildacdn.com/tild3831-6230-4161-b461-613534343030/1_3.png' alt='' imgfield='tn_img_1648736210795' /></div>
+						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='../assets/img/others/1_3.png' alt='' imgfield='tn_img_1648736210795' /></div>
 					</div>
 					<div class='t396__elem tn-elem tn-elem__4342722331649156533201 t-animate' data-elem-id='1649156533201' data-elem-type='image' data-field-top-value="-158" data-field-left-value="20" data-field-width-value="56" data-field-axisy-value="bottom" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="fadeindown" data-animate-duration="0.5" data-animate-distance="100" data-field-filewidth-value="101" data-field-fileheight-value="32" data-field-top-res-320-value="-26" data-field-left-res-320-value="1" data-field-top-res-480-value="-43" data-field-left-res-480-value="11" data-field-width-res-480-value="42" data-field-top-res-640-value="-79" data-field-left-res-640-value="20" data-field-width-res-640-value="56" data-field-top-res-960-value="-93" data-field-left-res-960-value="20" data-field-width-res-960-value="42">
 						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='https://static.tildacdn.com/tild3966-3530-4938-b436-336539363964/visa-logo.svg' alt='' imgfield='tn_img_1649156533201' /></div>
@@ -295,7 +295,7 @@
 						<h1 class='tn-atom' field='tn_text_1648802032050'>Accept payments</h1>
 					</div>
 					<div class='t396__elem tn-elem tn-elem__4304978141648802796093 t-animate' data-elem-id='1648802796093' data-elem-type='image' data-field-top-value="21" data-field-left-value="351" data-field-width-value="828" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="zoomin" data-animate-duration="0.5" data-animate-scale="0.2" data-field-filewidth-value="1680" data-field-fileheight-value="743" data-field-top-res-320-value="245" data-field-left-res-320-value="0" data-field-width-res-320-value="320" data-field-top-res-480-value="183" data-field-left-res-480-value="10" data-field-width-res-480-value="460" data-field-top-res-640-value="149" data-field-left-res-640-value="92" data-field-width-res-640-value="538" data-field-top-res-960-value="20" data-field-left-res-960-value="110" data-field-width-res-960-value="830">
-						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='https://static.tildacdn.com/tild6336-3838-4233-b631-656565656531/2.png' alt='' imgfield='tn_img_1648802796093' /></div>
+						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='../assets/img/others/bg_2_c2c.png' alt='' imgfield='tn_img_1648802796093' /></div>
 					</div>
 					<div class='t396__elem tn-elem tn-elem__4304978141648801807593' data-elem-id='1648801807593' data-elem-type='shape' data-field-top-value="20" data-field-left-value="20" data-field-height-value="367" data-field-width-value="1160" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-320-value="20" data-field-left-res-320-value="0" data-field-height-res-320-value="367" data-field-width-res-320-value="320" data-field-top-res-480-value="20" data-field-left-res-480-value="10" data-field-height-res-480-value="367" data-field-width-res-480-value="460" data-field-top-res-640-value="20" data-field-left-res-640-value="10" data-field-height-res-640-value="367" data-field-width-res-640-value="620" data-field-top-res-960-value="20" data-field-left-res-960-value="20" data-field-width-res-960-value="920">
 						<div class='tn-atom'></div>
@@ -310,7 +310,7 @@
 						<h1 class='tn-atom' field='tn_text_1649158082998'>Borderless cards</h1>
 					</div>
 					<div class='t396__elem tn-elem tn-elem__4304978141649158083000 t-animate' data-elem-id='1649158083000' data-elem-type='image' data-field-top-value="744" data-field-left-value="934" data-field-width-value="223" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="zoomin" data-animate-duration="0.5" data-animate-scale="0.2" data-field-filewidth-value="688" data-field-fileheight-value="542" data-field-top-res-320-value="1577" data-field-left-res-320-value="20" data-field-width-res-320-value="198" data-field-top-res-480-value="1564" data-field-left-res-480-value="30" data-field-width-res-480-value="228" data-field-top-res-640-value="1323" data-field-left-res-640-value="380" data-field-width-res-640-value="220" data-field-top-res-960-value="758" data-field-left-res-960-value="740" data-field-width-res-960-value="184">
-						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='https://static.tildacdn.com/tild3235-6430-4933-b763-626366373962/6.png' alt='' imgfield='tn_img_1649158083000' /></div>
+						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='../assets/img/others/6.png' alt='' imgfield='tn_img_1649158083000' /></div>
 					</div>
 					<div class='t396__elem tn-elem tn-elem__4304978141649158083002' data-elem-id='1649158083002' data-elem-type='shape' data-field-top-value="702" data-field-left-value="610" data-field-height-value="267" data-field-width-value="570" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-320-value="1537" data-field-left-res-320-value="0" data-field-height-res-320-value="378" data-field-width-res-320-value="320" data-field-top-res-480-value="1544" data-field-left-res-480-value="10" data-field-height-res-480-value="363" data-field-width-res-480-value="460" data-field-top-res-640-value="1288" data-field-left-res-640-value="10" data-field-width-res-640-value="620" data-field-top-res-960-value="698" data-field-left-res-960-value="490" data-field-height-res-960-value="267" data-field-width-res-960-value="450">
 						<div class='tn-atom'></div>
@@ -346,7 +346,7 @@
 						<h1 class='tn-atom' field='tn_text_1470209944682'>Serving global digital businesses</h1>
 					</div>
 					<div class='t396__elem tn-elem tn-elem__4320765791649166249921 ' data-elem-id='1649166249921' data-elem-type='image' data-field-top-value="60" data-field-left-value="981" data-field-width-value="523" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-sbs-event="scroll" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'di':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','fi':'','dd':'0'},{'di':300,'mx':-160,'my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','fi':'','dd':'0'}]" data-field-filewidth-value="912" data-field-fileheight-value="912" data-field-top-res-960-value="125" data-field-left-res-960-value="700" data-field-width-res-960-value="409">
-						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='https://static.tildacdn.com/tild3738-6234-4530-a136-363135643038/2022-04-12_153849.jpg' alt='' imgfield='tn_img_1649166249921' /></div>
+						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='../assets/img/others/2022-04-12_153849.png' alt='' imgfield='tn_img_1649166249921' /></div>
 					</div>
 					<div class='t396__elem tn-elem tn-elem__4320765791649165759925 t-animate' data-elem-id='1649165759925' data-elem-type='image' data-field-top-value="370" data-field-left-value="20" data-field-width-value="50" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="0.5" data-animate-distance="50" data-field-filewidth-value="64" data-field-fileheight-value="64" data-field-top-res-320-value="252" data-field-left-res-320-value="0" data-field-width-res-320-value="40" data-field-top-res-480-value="276" data-field-left-res-480-value="10" data-field-top-res-640-value="379" data-field-left-res-640-value="20" data-field-top-res-960-value="380" data-field-left-res-960-value="20">
 						<div class='tn-atom'><img class='tn-atom__img t-img' data-original='https://static.tildacdn.com/tild6537-6365-4630-b738-656235343136/Frame.svg' alt='' imgfield='tn_img_1649165759925' /></div>
