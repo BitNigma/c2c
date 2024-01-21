@@ -20216,3 +20216,22 @@ a:hover .text-hover-primary {
         opacity: 1;
     }
 }
+.background-gray {
+    background-color: rgb(238, 242, 247);
+    color: #000;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.button_purple {
+    background: #7658ff;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    line-height: 20px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.button_purple:hover{
+    background: #6f62aa;
+}

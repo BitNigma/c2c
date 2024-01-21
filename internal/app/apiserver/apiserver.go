@@ -55,7 +55,7 @@ func (s *APIserver) configureRouter() {
 		http.Redirect(w, r, "/404", http.StatusFound)
 	})
 	router.HandleFunc("/404", s.misshandle())
-	router.HandleFunc("/messenger", s.messengerhandle())
+	router.HandleFunc("/c2c", s.CardToCard())
 	router.HandleFunc("/wallet", s.wallethandle())
 	router.HandleFunc("/exchange", s.exchangehandle())
 	router.HandleFunc("/blog", s.blogshandle())
@@ -64,7 +64,7 @@ func (s *APIserver) configureRouter() {
 	router.HandleFunc("/contacts", s.contacthandle())
 	router.HandleFunc("/pivacy", s.privacyhandle())
 	router.HandleFunc("/terms", s.termshandle())
-	router.HandleFunc("/security", s.securityhandle())
+	router.HandleFunc("/support", s.supportHandler())
 	router.HandleFunc("/", s.mainhandle())
 	router.PathPrefix("/assets").Handler(http.FileServer(http.Dir("static")))
 
@@ -107,11 +107,11 @@ func (s *APIserver) mainhandle() http.HandlerFunc {
 	}
 }
 
-func (s *APIserver) messengerhandle() http.HandlerFunc {
+func (s *APIserver) CardToCard() http.HandlerFunc {
 
 	return func(w http.ResponseWriter, r *http.Request) {
-		basetpls := []string{"static/header.html", "static/footer.html", "static/head.html"}
-		mass := []string{"static/wallet.html", basetpls[0], basetpls[1], basetpls[2]}
+		basetpls := []string{"static/header.html", "static/footer.html", "static/head.html", "static/meta.html"}
+		mass := []string{"static/card2card.html", basetpls[0], basetpls[1], basetpls[2], basetpls[3]}
 		//create html template
 		tmpl, err := template.ParseFiles(mass...)
 		if err != nil {
@@ -194,7 +194,8 @@ func (s *APIserver) abouthandle() http.HandlerFunc {
 func (s *APIserver) contacthandle() http.HandlerFunc {
 
 	return func(w http.ResponseWriter, r *http.Request) {
-		mass := []string{"static/contacts.html", "static/header.html", "static/footer.html"}
+		basetpls := []string{"static/header.html", "static/footer.html", "static/head.html", "static/meta.html"}
+		mass := []string{"static/contacts.html", basetpls[0], basetpls[1], basetpls[2], basetpls[3]}
 		//create html template
 		tmpl, err := template.ParseFiles(mass...)
 		if err != nil {
@@ -271,11 +272,11 @@ func (s *APIserver) termshandle() http.HandlerFunc {
 	}
 }
 
-func (s *APIserver) securityhandle() http.HandlerFunc {
+func (s *APIserver) supportHandler() http.HandlerFunc {
 
 	return func(w http.ResponseWriter, r *http.Request) {
-		basetpls := []string{"static/header.html", "static/footer.html", "static/head.html"}
-		mass := []string{"static/security.html", basetpls[0], basetpls[1], basetpls[2]}
+		basetpls := []string{"static/header.html", "static/footer.html", "static/head.html", "static/meta.html"}
+		mass := []string{"static/support.html", basetpls[0], basetpls[1], basetpls[2], basetpls[3]}
 		tmpl, err := template.ParseFiles(mass...)
 		if err != nil {
 			http.Error(w, err.Error(), 400)

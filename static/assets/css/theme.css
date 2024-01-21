@@ -24154,6 +24154,9 @@ a:hover .text-hover-primary {
     opacity: 1;
   }
 }
+.gray {
+  background-color: var(--gray);
+}
 
 /*------------------------------------
   File for your custom SCSS style
