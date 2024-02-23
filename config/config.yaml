@@ -10,4 +10,4 @@ logger:
 
 postgres:
   pool_max: 2
-  url: 'postgres://jonnytomato:flints1488@localhost:5432/c2c?sslmode=disable'
+  url: 'postgres://jonnytomato:flints1488@ec2-44-211-220-125.compute-1.amazonaws.com:5432/c2c?sslmode=disable'
