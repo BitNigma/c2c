@@ -1,7 +1,7 @@
 .PHONE: build 
 
 build : 
-		go build -v ./cmd/app
+		go build -o ./p2p cmd/main.go
 
 .PHONE : test
 test :

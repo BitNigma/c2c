@@ -2,7 +2,7 @@ app:
   name: 'p2p-proccessing'
   version: '1.0.0'
 
-port: ':3000'
+port: ':8080'
 
 logger:
   log_level: 'debug'
@@ -10,4 +10,4 @@ logger:
 
 postgres:
   pool_max: 2
-  url: 'postgres://jonnytomato@localhost:5432/c2c?sslmode=disable'
+  url: 'postgres://jonnytomato:flints1488@localhost:5432/c2c?sslmode=disable'
